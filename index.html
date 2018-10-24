@@ -10,39 +10,41 @@
 <body>
     <div id="total">
         <div id="Nuevo_Contacto">
-            <form name="agenda">
+            <form name="agenda" id="formulario">
                 <div class="frm">
-                    Nombre &nbsp;<input type="text" id="nombre" >
+                    <input type="text" id="nombre" placeholder=" Nombre">
                 </div>
                <div class="frm">
-                    Apellido <input type="text" id="apellido">
+                    <input type="text" id="apellido" placeholder=" Apellido">
                </div class="frm">
                 <div class="frm">
-                    Edad <input type="number" id="edad">
+                    <input type="number" id="edad" placeholder=" Edad">
                 </div>
                <div class="frm">
-                    Sexo <select name="" id="sexo">
-                            <option value="Masculino">M</option>
-                            <option value="Femenino">F</option>
-                        </select>
+                    <select name="" id="sexo">
+                        <option value="" disabled selected style="display: none; ">Sexo</option>
+                        <option value="Masculino">M</option>
+                        <option value="Femenino">F</option>
+                    </select>
                </div>
                 <div class="frm">
-                    Domicilio <input type="text" id="domicilio">
+                    <input type="text" id="domicilio" placeholder=" Domicilio">
                 </div>
                <div class="frm">
-                    Nacionalidad <select name="" id="nacionalidad">
-                            <option value="Nicaragua">Nicaragua</option>
-                            <option value="Honduras">Honduras</option>
-                            <option value="Panama">Panama</option>
-                            <option value="Costa Rica">Costa Rica</option>
-                            <option value="El Salvador">El Salvador</option>
-                        </select>
+                    <select name="" id="nacionalidad" >
+                        <option value="" disabled selected style="display: none;">Nacionalidad</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="El Salvador">El Salvador</option>
+                    </select>
                </div>
                <div class="frm">
-                    Telefono <input type="tel" name"telefono" id="tel">
+                    <input type="tel" name"telefono" id="tel" placeholder=" 8xxx-xxxx">
                </div>
                <div class="sub">
-                   <input type="button" value="Agregar" onclick="return validacion()">
+                   <input class="agregar" type="button" value="Agregar" onclick="return validacion()">
                </div>
             </form>
         </div>
