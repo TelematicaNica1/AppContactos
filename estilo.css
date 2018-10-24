@@ -1,22 +1,60 @@
+
 #Nuevo_Contacto{
 	width: 25%;
-	border: 1px solid;
-	padding: 15px 15px;
+	height: 95%;
+	/*border: 1px solid;*/
+	padding: 10px 20px 10px 20px;
+	position: absolute;
+	left: 70%;
+	background-color: #2CC499;
+
 }
-#nombre, #apellido, #sexo, #edad, #domicilio, #nacionalidad, #tel, .sub{
-	margin: 8px;
-	padding: 3px;
-	width: 55%;
+#formulario{
+	height: 97%;
+	
+	margin-top: 2%;
+	background-color: #1F485F;
+}
+#nombre, #apellido, #sexo, #edad, #domicilio, #nacionalidad, #tel{
+	padding: 2%;
+	margin-top: 8%;
+	margin-left: 15%;
+	width: 65%;
+	border: solid 1px #fff;
+	background-color: #1A3647;
+	font-size: 15px;
+}
+#nacionalidad{
+	width: 70%;
 }
 #edad{
-	width: 15%;
+	width: 16%;
 }
 #sexo{
-	width: 18%;
+	width: 21%;
 }
-.frm{
-	font-size: 16px;
+::placeholder{ 
+	color: #6B6E6D; 
+}
+select,
+option {
+  color: #6B6E6D;
+}
+.sub{
+	
+}
+.agregar{
+	padding: 4%;
+	margin-top: 20%;
+	margin-left: 15%;
+	width: 70%;
+	background-color: #2CC499;
+	border: none;
+	font-size: 15px;
+	color: #fff;
 }
 #Tabla_Contacto{
 	border:solid 1px #000;
+	display: inline-block;
+	position: absolute;
 }
