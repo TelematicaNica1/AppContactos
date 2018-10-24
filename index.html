@@ -7,6 +7,57 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="total">
+        <div id="Nuevo_Contacto">
+            <form name="agenda">
+                <div class="frm">
+                    Nombre <input type="text" id="nombre" >
+                </div>
+               <div class="frm">
+                    Apellido <input type="text" id="apellido">
+               </div class="frm">
+                <div class="frm">
+                    Edad <input type="number" id="edad">
+                </div>
+               <div class="frm">
+                    Sexo <select name="" id="sexo">
+                            <option value="Masculino">M</option>
+                            <option value="Femenino">F</option>
+                        </select>
+               </div>
+                <div class="frm">
+                    Domicilio <input type="text" id="domicilio">
+                </div>
+               <div class="frm">
+                    Nacionalidad <select name="" id="nacionalidad">
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="El Salvador">El Salvador</option>
+                        </select>
+               </div>
+               <div class="frm">
+                    Telefono <input type="tel" name"telefono" id="tel">
+               </div>
+               <div class="sub">
+                   <input type="button" value="Agregar" onclick="return validacion()">
+               </div>
+            </form>
+        </div>
+        <div id="Tabla_Contacto">
+            <table id="tabla">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Edad</td>
+                    <td>Sexo</td>
+                    <td>Domicilio</td>
+                    <td>Nacionalidad</td>
+                    <td>Telefono</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
