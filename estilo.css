@@ -1,31 +1,39 @@
 
 #Nuevo_Contacto{
-	width: 25%;
+	width: 28%;
 	height: 95%;
 	/*border: 1px solid;*/
-	padding: 10px 20px 10px 20px;
+	padding: 10px 10px 10px 10px;
 	position: absolute;
-	left: 70%;
-	background-color: #2CC499;
+	left: 60%;
+	/*background-color: #2CC499;*/
 
 }
 #formulario{
 	height: 97%;
-	
-	margin-top: 2%;
+	margin-top: 0;
 	background-color: #1F485F;
+	border: solid 6px #828584;
+	border-radius: 5px;
 }
 #nombre, #apellido, #sexo, #edad, #domicilio, #nacionalidad, #tel{
 	padding: 2%;
 	margin-top: 8%;
-	margin-left: 15%;
-	width: 65%;
-	border: solid 1px #fff;
-	background-color: #1A3647;
-	font-size: 15px;
-}
-#nacionalidad{
+	margin-left: 12.5%;
 	width: 70%;
+	border:0;
+	border-bottom: solid 1px #fff;
+	background-color:#1F485F ;
+	font-size: 15px;
+	color: #fff;
+}
+#nombre, #apellido, #sexo, #edad, #domicilio, #nacionalidad, #tel,:focus {
+  border-color: #fff;
+  outline: 0;
+}
+
+#nacionalidad{
+	width: 73%;
 }
 #edad{
 	width: 16%;
@@ -34,7 +42,7 @@
 	width: 21%;
 }
 ::placeholder{ 
-	color: #6B6E6D; 
+	color: #fff; 
 }
 select,
 option {
@@ -45,16 +53,36 @@ option {
 }
 .agregar{
 	padding: 4%;
-	margin-top: 20%;
+	margin-top: 12%;
 	margin-left: 15%;
 	width: 70%;
 	background-color: #2CC499;
-	border: none;
+	border-color: #fff;
 	font-size: 15px;
 	color: #fff;
 }
+.agregar:hover{
+	background-color: #278364;
+}
 #Tabla_Contacto{
-	border:solid 1px #000;
+	top: 3%;
+	left: 7%;
 	display: inline-block;
 	position: absolute;
+}
+#tabla{
+	border: 5px solid #828584 ;
+	border-radius: 5px;
+	background-color: #1F485F;
+	width: 100%;
+	border-spacing: 0;
+	
+	
+}
+td{
+	margin: 5px;
+	padding: 15px;
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
 }
