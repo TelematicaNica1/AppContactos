@@ -1,4 +1,6 @@
-
+body{
+	background-color: #A9CCE3;
+}
 #Nuevo_Contacto{
 	width: 28%;
 	height: 95%;
@@ -78,6 +80,9 @@ option {
 	border-spacing: 0;
 	
 	
+}
+tr:hover{
+	background: rgba(98, 77, 13, 0.5);
 }
 td{
 	margin: 5px;
