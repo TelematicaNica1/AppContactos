@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="code.js"></script>
     <title>Contactos</title>
 </head>
 <body>
@@ -12,27 +13,27 @@
         <div id="Nuevo_Contacto">
             <form name="agenda" id="formulario">
                 <div class="frm">
-                    <input type="text" id="nombre" placeholder=" Nombre">
+                    <input type="text" id="nombre" placeholder=" Nombre*">
                 </div>
                <div class="frm">
-                    <input type="text" id="apellido" placeholder=" Apellido">
+                    <input type="text" id="apellido" placeholder=" Apellido*">
                </div class="frm">
                 <div class="frm">
-                    <input type="number" id="edad" placeholder=" Edad">
+                    <input type="number" id="edad" placeholder=" Edad*" min="1" pattern="^[0-9]+">
                 </div>
                <div class="frm">
                     <select name="" id="sexo">
-                        <option value="" disabled selected style="display: none; ">Sexo</option>
+                        <option value="" disabled selected style="display: none; ">Sexo*</option>
                         <option value="Masculino">M</option>
                         <option value="Femenino">F</option>
                     </select>
                </div>
                 <div class="frm">
-                    <input type="text" id="domicilio" placeholder=" Domicilio">
+                    <input type="text" id="domicilio" placeholder=" Domicilio*">
                 </div>
                <div class="frm">
                     <select name="" id="nacionalidad" >
-                        <option value="" disabled selected style="display: none;">Nacionalidad</option>
+                        <option value="" disabled selected style="display: none;">Nacionalidad*</option>
                         <option value="Nicaragua">Nicaragua</option>
                         <option value="Honduras">Honduras</option>
                         <option value="Panama">Panama</option>
@@ -41,7 +42,7 @@
                     </select>
                </div>
                <div class="frm">
-                    <input type="tel" name"telefono" id="tel" placeholder=" 8xxx-xxxx">
+                    <input type="tel" name="telefono" id="tel" placeholder=" 8xxx-xxxx">
                </div>
                <div class="sub">
                    <input class="agregar" type="button" value="Crear Contacto" onclick="return validacion()">
