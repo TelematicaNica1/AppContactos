@@ -58,3 +58,12 @@ option {
 	display: inline-block;
 	position: absolute;
 }
+
+td{
+    border:solid 1px;
+    margin: 5px;
+}
+
+tr:hover{
+    background-color: rgba(0,0,0,0.5);
+}
