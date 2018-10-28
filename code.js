@@ -25,7 +25,7 @@ function Carga(objJson){
     tr.appendChild(domicilio);
 
     var nacionalidad = document.createElement("td");
-    nacionalidad.innerHTML = objJson.nacionalidad.value;
+    nacionalidad.innerHTML = objJson.nacionalidad;
     tr.appendChild(nacionalidad);
 
     var tel = document.createElement("td");
