@@ -51,12 +51,5 @@ function Json(){
     TR();
 }
 
-function TR() {
-    var anchors = document.getElementsByClassName("doble");
-    for(var i = 0; i < anchors.length; i++) {
-        var anchor = anchors[i];
-        anchor.ondblclick = function() {
-            alert('ho ho ho');
-        }
-    }
-}
+
+
