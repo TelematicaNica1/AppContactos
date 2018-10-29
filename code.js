@@ -36,10 +36,9 @@ function Carga(objJson){
 
     tr.setAttribute("class", "doble");
     tr.setAttribute("id", count);
-    
     count++;
-
     tabla.appendChild(tr);
+    tr.onclick = fi;
 }
 
 function Json(){
@@ -51,16 +50,33 @@ function Json(){
     }
 }
 
-function editar() {
-    var anchors = document.getElementsByTagName("tr");
-    for(var i = 0; i < anchors.length; i++) {
-        var anchor = anchors[i];
-        anchor.ondblclick = edicion(anchor.getAttribute("id"));
-    }
+var seleccionado=null;            //contiene la fila seleccionada
+    
+function click() {
+        if(seleccionado==this) {
+            this.style.backgroundColor="transparent";
+            seleccionado=null;
+        }
+        else {
+            if(seleccionado!=null) 
+                seleccionado.style.backgroundColor="transparent";
+            this.style.backgroundColor="#e0b";
+            seleccionado=this;
+        }
+        
 }
 
-function edicion(b){
-     alert(b);
+function fi(){
+var filas=document.getElementById("tabla").getElementsByClassName("doble");
+for(var i=0; i<filas.length; i++) {
+    filas[i].onclick=click;
+}
+
+}
+
+function eliminar() {
+    if(seleccionado==null) return alert("Seleccione una fila haciendo click sobre ella");
+    seleccionado.parentNode.removeChild(seleccionado);
 }
 
 
