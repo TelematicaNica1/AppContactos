@@ -36,6 +36,7 @@ function Carga(objJson){
 
     tr.setAttribute("class", "doble");
     tr.setAttribute("id", count);
+    
     count++;
 
     tabla.appendChild(tr);
@@ -48,8 +49,18 @@ function Json(){
     for(var i=0; i<5; i++){
         Carga(objJson);
     }
-    TR();
 }
 
+function editar() {
+    var anchors = document.getElementsByTagName("tr");
+    for(var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.ondblclick = edicion(anchor.getAttribute("id"));
+    }
+}
+
+function edicion(b){
+     alert(b);
+}
 
 
