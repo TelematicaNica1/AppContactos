@@ -93,3 +93,13 @@ td{
 tr{
 	cursor: pointer;
 }
+
+#eliminar{
+	text-align: center;
+	color:white;
+	background-color: #2CC499;
+	padding: 3px;
+	margin-left: 200px;
+	margin-top:10px;
+	cursor:pointer;
+}

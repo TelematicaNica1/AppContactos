@@ -67,10 +67,10 @@ function click() {
 }
 
 function fi(){
-var filas=document.getElementById("tabla").getElementsByClassName("doble");
-for(var i=0; i<filas.length; i++) {
-    filas[i].onclick=click;
-}
+    var filas=document.getElementById("tabla").getElementsByClassName("doble");
+    for(var i=0; i<filas.length; i++) {
+        filas[i].onclick=click;
+    }
 
 }
 
