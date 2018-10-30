@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="code.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
                     Telefono <input type="tel" name"telefono" id="tel">
                </div>
                <div class="sub">
-                   <input type="button" value="Agregar" onclick="return validacion()">
+                   <input type="button" value="Agregar" onclick="return validacion()" id="crear">
                </div>
             </form>
         </div>
@@ -56,6 +57,9 @@
                     <td>Nacionalidad</td>
                     <td>Telefono</td>
                 </tr>
+                <tbody id="tablaCont">
+                    
+                </tbody>
             </table>
         </div>
     </div>
