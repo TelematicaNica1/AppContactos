@@ -55,7 +55,7 @@ option {
 	padding: 4%;
 	margin-top: 12%;
 	margin-left: 15%;
-	width: 70%;
+	width: 35%;
 	background-color: #2CC499;
 	border-color: #fff;
 	font-size: 15px;
@@ -63,6 +63,17 @@ option {
 }
 .agregar:hover{
 	background-color: #278364;
+.borrar{
+        padding: 4%;
+        margin-top: 12%;
+        margin-rigth: 15%;
+        width: 35%;
+        background-color: #2CC499;
+        border-color: #fff;
+        font-size: 15px;
+        color: #fff;
+}
+
 }
 #Tabla_Contacto{
 	top: 3%;
