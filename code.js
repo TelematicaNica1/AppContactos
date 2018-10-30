@@ -24,6 +24,9 @@ function validacion(){
         alert("Debe llenar el Telefono");
         return false;
     }
+
+    crearTR();
+
     return true;
 }
 
@@ -40,49 +43,52 @@ onload = function(){
   }
 }
 
-function crear(){
-    let nom = document.getElementById("nombre");
-    let ape = document.getElementById("apellido");
-    let ed = document.getElementById("edad");
-    let dom = document.getElementById("domicilio");
-    let telf = document.getElementById("tel");
-    let naci = document.getElementById("nacionalidad");
-    let sex = document.getElementById("sexo");
-    let creacont = document.getElementById("crear");
-    
-    if (creacont.value == "Agregar") {
-        if(validacion() == -1) return;
-        agregartabla(nom.value, ape.value, ed.value, dom.value, telf.value, naci.value, sex.value);
-    }
-}
+function crearTR(){
+    var tabla = document.getElementById("tabla");
+    var tr = document.createElement("tr");
 
-function agregartabla(nombre, apellido, edad, domicilio, tel, nacionalidad, sexo){
-    let tdnom, tdape, tded, tddom, tdtel, tdnac, tdsex;
+    var nnombre = document.getElementById("nombre");
+    var aapellido = document.getElementById("apellido");
+    var eedad = document.getElementById("edad");
+    var ssexo = document.getElementById("sexo");
+    var nnacionalidad = document.getElementById("nacionalidad");
+    var ddomicilio = document.getElementById("domicilio");
+    var ttel = document.getElementById("tel");
 
-    tdnom = document.createElement("td");
-    tdnom.innerHTML = nombre;
-    tdape = document.createElement("td");
-    tdape.innerHTML = apellido;
-    tded = document.createElement("td");
-    tded.innerHTML = edad;
-    tdsex = document.createElement("td");
-    tdsex.innerHTML = sexo;
-    tddom = document.createElement("td");
-    tddom.innerHTML = domicilio;
-    tdnac = document.createElement("td");
-    tdnac.innerHTML = nacionalidad;
-    tdtel = document.createElement("td");
-    tdtel.innerHTML = tel;
-    
-   let filaCont = document.createElement(tr);
-   filaCont.appendChild(tdnom);
-   filaCont.appendChild(tdape);
-   filaCont.appendChild(tded);
-   filaCont.appendChild(tdsex);
-   filaCont.appendChild(tddom);
-   filaCont.appendChild(tdnac);
-   filaCont.appendChild(tdtel);
-    
-   let tbody = document.getElementById("tablaCont");
-    tbody.appendChild(filaCont);
+    var nombre = document.createElement("td");
+    nombre.innerHTML = nnombre.value;
+    tr.appendChild(nombre);
+
+    var apellido = document.createElement("td");
+    apellido.innerHTML = aapellido.value;
+    tr.appendChild(apellido);
+
+    var edad = document.createElement("td");
+    edad.innerHTML = eedad.value;
+    tr.appendChild(edad);
+
+    var sexo = document.createElement("td");
+    sexo.innerHTML = ssexo.value;
+    tr.appendChild(sexo);
+
+    var nacionalidad = document.createElement("td");
+    nacionalidad.innerHTML = nnacionalidad.value;
+
+    var domicilio = document.createElement("td");
+    domicilio.innerHTML = ddomicilio.value;
+
+    var tel = document.createElement("td");
+    tel.innerHTML = ttel.value;
+
+    tr.appendChild(domicilio);
+    tr.appendChild(nacionalidad);
+    tr.appendChild(tel);
+
+    tabla.appendChild(tr);
+
+    nnombre.value = "";
+    aapellido.value = "";
+    eedad.value = "";
+    ddomicilio.value = "";
+    ttel.value = "";
 }
