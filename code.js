@@ -45,9 +45,12 @@ function Json(){
     var objJson = {"nombre":"Jonathan", "apellido":"Velasquez", "edad":"20", "sexo":"M",
                     "domicilio":"El Viejo", "nacionalidad":"Nicaragua", "tel":"86691652"};
 
-    for(var i=0; i<5; i++){
-        Carga(objJson);
-    }
+    Carga(objJson);
+    var obj = {"nombre":"Daybeling", "apellido":"Lugo", "edad":"21", "sexo":"F",
+                    "domicilio":"Guadalupe", "nacionalidad":"Nicaragua", "tel":"82234568"};
+    Carga(obj);
+    var obje = {"nombre":"Maria ", "apellido":"Jose", "edad":"22", "sexo":"F","domicilio":"San perdro", "nacionalidad":"Costa Rica", "tel":"82125678"};
+    Carga(obje);
 }
 
 var seleccionado=null;            //contiene la fila seleccionada
@@ -90,7 +93,7 @@ function crearTR(){
     var nnacionalidad = document.getElementById("nacionalidad");
     var ddomicilio = document.getElementById("domicilio");
     var ttel = document.getElementById("tel");
-
+    
     var nombre = document.createElement("td");
     nombre.innerHTML = nnombre.value;
     tr.appendChild(nombre);
