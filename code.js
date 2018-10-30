@@ -50,8 +50,6 @@ function Json(){
     }
 }
 
-<<<<<<< HEAD
-=======
 var seleccionado=null;            //contiene la fila seleccionada
     
 function click() {
@@ -82,4 +80,3 @@ function eliminar() {
 }
 
 
->>>>>>> prueba
