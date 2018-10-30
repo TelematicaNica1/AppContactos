@@ -37,8 +37,8 @@ function Carga(objJson){
     tr.setAttribute("class", "doble");
     tr.setAttribute("id", count);
     count++;
-
     tabla.appendChild(tr);
+    tr.onclick = fi;
 }
 
 function Json(){
@@ -48,6 +48,38 @@ function Json(){
     for(var i=0; i<5; i++){
         Carga(objJson);
     }
-    TR();
 }
 
+<<<<<<< HEAD
+=======
+var seleccionado=null;            //contiene la fila seleccionada
+    
+function click() {
+        if(seleccionado==this) {
+            this.style.backgroundColor="transparent";
+            seleccionado=null;
+        }
+        else {
+            if(seleccionado!=null) 
+                seleccionado.style.backgroundColor="transparent";
+            this.style.backgroundColor="#e0b";
+            seleccionado=this;
+        }
+        
+}
+
+function fi(){
+    var filas=document.getElementById("tabla").getElementsByClassName("doble");
+    for(var i=0; i<filas.length; i++) {
+        filas[i].onclick=click;
+    }
+
+}
+
+function eliminar() {
+    if(seleccionado==null) return alert("Seleccione una fila haciendo click sobre ella");
+    seleccionado.parentNode.removeChild(seleccionado);
+}
+
+
+>>>>>>> prueba
